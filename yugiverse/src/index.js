@@ -4,9 +4,10 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import Blog from './pages/Blog';
 import Nopage from './pages/Nopage';
 import Layout from './Layout';
+import Yugidex from './pages/Yugidex';
+import Forums from './pages/Forums';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="blog" element={<Blog />} />
+          <Route path="yugidex" element={<Yugidex />} />
+          <Route path="forums" element={<Forums />} />
           <Route path="*" element={<Nopage />} />
 
         </Route>

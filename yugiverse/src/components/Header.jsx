@@ -6,8 +6,6 @@ function Header() {
         <header>
             <h1>YugiVerse</h1>
             <Navigation />
-            
-
         </header>
     )
 
