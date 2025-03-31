@@ -64,36 +64,6 @@
     
 }
 
-#name,
-#email,
-#message,
-textarea, input {
-    margin-bottom: 20px;
-    position: relative;
-    width: 250px;
-    height: 100%;
-}
-
-textarea {
-    padding-bottom: 200px;
-    resize: vertical;
-}
-
-#tutorial {
-    width: 440px;
-    height: 300px;
-}
-
-::placeholder {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#tut-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Media Queries */
 @media screen and (min-width: 950px) {
     #forum-posts {

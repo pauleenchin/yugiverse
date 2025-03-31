@@ -17,14 +17,6 @@ function About() {
 
                         <h4>Getting Started</h4>
                         <section id="tut-center">
-                            <iframe
-                                id="tutorial"
-                                src="https://www.youtube.com/embed/55gsu3_36Fs?si=SkUyDf7dR1W5uX8y"
-                                title="YouTube video tutoriqal"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen
-                            ></iframe>
                         </section>
                     </div>
                 </section>
