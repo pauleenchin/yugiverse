@@ -1,7 +1,5 @@
 import './css/Home.css';
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-
+import HomeBlock from '../components/HomeBlock';
 
 function Home() {
   return (
@@ -15,22 +13,22 @@ function Home() {
             <h2 id='featured-title'>Featured</h2>
 
             <div id='featured-blocks' className='columns'>
-              <a href='/Forums' className='clickable-box'>
-                <div className='home-block one'>
-                  <img src= {`${process.env.PUBLIC_URL}/images/block-one.webp`} alt='New Banlist' />
-                  <h4 className='block-title'>New Banlist Announced</h4>
-                </div>
-              </a>
-
-              <div className='home-block one'>
-                <img src={`${process.env.PUBLIC_URL}/images/block-two.png`} alt='Best Tech Cards' />
-                <h4 className='block-title'>Best Tech Cards</h4>
-              </div>
-
-              <div className='home-block one'>
-                <img src={`${process.env.PUBLIC_URL}/images/block-three.jpg`} alt='Expensive Cards 2025' />
-                <h4 className='block-title'>Most Expensive Cards of 2025</h4>
-              </div>
+              <HomeBlock
+                image={`${process.env.PUBLIC_URL}/images/block-one.webp`}
+                title='New Banlist Announced'
+                alt='New Banlist'
+                link='/yugiverse/forums'
+              />
+              <HomeBlock
+                image={`${process.env.PUBLIC_URL}/images/block-two.png`}
+                title='Best Tech Cards'
+                alt='Best Tech Cards'
+              />
+              <HomeBlock
+                image={`${process.env.PUBLIC_URL}/images/block-three.jpg`}
+                title='Most Expensive Cards of 2025'
+                alt='Expensive Cards 2025'
+              />
             </div>
           </section>
 
@@ -41,17 +39,12 @@ function Home() {
             </div>
             <p>
               Silhouette Rabbit is a Level 2 DARK Beast monster in Yu-Gi-Oh! with a shadowy,
-              mysterious design that makes it look like a swift and elusive creature. Its
-              effect focuses on dodging attacks or interactions, allowing it to vanish from
-              the field temporarily. This card is often used in trick-based or control decks,
-              where its ability to avoid danger can set up strategic plays.
+              mysterious design that makes it look like a swift and elusive creature...
             </p>
           </section>
         </div>
       </div>
-      
     </>
-    
   );
 }
 

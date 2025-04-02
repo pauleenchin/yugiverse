@@ -1,9 +1,12 @@
 import './css/About.css'
+import SectionTitle from '../components/SectionTitle';
 
 function About() {
     return (
         <>
-            <h2 id="about-us-header">About Us</h2>
+            <SectionTitle
+                title="About Us"
+            />
             <div id="page" className="columns">
                 <section id="about-us-container" className="three">
                     <div>

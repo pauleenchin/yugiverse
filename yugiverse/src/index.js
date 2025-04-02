@@ -8,6 +8,8 @@ import Nopage from './pages/Nopage';
 import Layout from './Layout';
 import Yugidex from './pages/Yugidex';
 import Forums from './pages/Forums';
+import DiscussionPostPage from './pages/DiscussionPostPage';
+import MonsterPage from './pages/MonsterPage';
 
 function App() {
   return (
@@ -16,8 +18,13 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+
           <Route path="yugidex" element={<Yugidex />} />
+          <Route path="/monster/:id" element={<MonsterPage />} />
+          
           <Route path="forums" element={<Forums />} />
+          <Route path="/forums/post/:title" element={<DiscussionPostPage />} />
+
           <Route path="*" element={<Nopage />} />
 
         </Route>

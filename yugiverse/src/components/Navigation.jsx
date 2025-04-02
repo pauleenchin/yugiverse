@@ -1,17 +1,28 @@
-import './css/Navigation.css'
-import {Outlet, Link} from "react-router-dom";
+import './css/Navigation.css';
+import { Link } from "react-router-dom";
+import { useState } from 'react';
 
 function Navigation() {
-    return (
-        <nav id="main-nav">
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/Yugidex">Yugidex</Link></li>
-                <li><Link to="/Forums">Forums</Link></li>
-                <li><Link to="/About">About</Link></li>
-            </ul>
-        </nav>
+    const [menuOpen, setMenuOpen] = useState(false);
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    }
+
+    return (
+        <nav id="header-nav">
+            <div id="toggle-nav" className="toggle-nav" onClick={toggleMenu}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="nav-items" className={`nav-items ${menuOpen ? "show" : ""}`}>
+                <Link to="/">Home</Link>
+                <Link to="/Yugidex">Yu-Gi-Dex</Link>
+                <Link to="/Forums">Forums</Link>
+                <Link to="/About">About</Link>
+            </div>
+        </nav>
     );
 }
 

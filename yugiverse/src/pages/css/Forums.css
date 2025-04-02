@@ -64,6 +64,43 @@
     
 }
 
+/* Forums.css */
+
+/* Make the page take full height */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ensure the layout fills the height */
+  #page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Expand content area to fill remaining space */
+  main#content {
+    flex: 1;
+    display: flex;
+  }
+  
+  /* Stretch forum post section */
+  #forums.five {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Stretch the post list */
+  #forum-posts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
 /* Media Queries */
 @media screen and (min-width: 950px) {
     #forum-posts {
