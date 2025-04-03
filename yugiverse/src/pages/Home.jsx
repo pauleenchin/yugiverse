@@ -17,7 +17,7 @@ function Home() {
                 image={`${process.env.PUBLIC_URL}/images/block-one.webp`}
                 title='New Banlist Announced'
                 alt='New Banlist'
-                link='/yugiverse/forums'
+                link='/yugiverse/Forums'
               />
               <HomeBlock
                 image={`${process.env.PUBLIC_URL}/images/block-two.png`}
