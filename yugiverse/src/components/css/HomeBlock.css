@@ -1,0 +1,30 @@
+.home-block {
+    flex: 1 1 250px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow-preset);
+    text-align: center;
+    padding-bottom: 10px;
+    
+    color: inherit;
+    display: block;
+    cursor: pointer;
+  }
+
+.block-title h4 {
+    text-decoration: none;
+
+  }
+  
+  .home-block img {
+    height: auto;
+    max-width: 200px;
+    object-fit: cover;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }

@@ -1,6 +1,5 @@
-// DiscussionPost.jsx
 import { useNavigate } from 'react-router-dom';
-import '../pages/css/Forums.css';
+import './css/DiscussionPost.css';
 
 function DiscussionPost({ title, content }) {
   const navigate = useNavigate();
@@ -12,7 +11,7 @@ function DiscussionPost({ title, content }) {
   };
 
   return (
-    <div className="discussion-post clickable-box" onClick={handleClick}>
+    <div className="discussion-post" onClick={handleClick}>
       <h3 className="discussion-title">{title}</h3>
       <p className="discussion-content">{content}</p>
     </div>

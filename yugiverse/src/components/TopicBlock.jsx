@@ -1,14 +1,21 @@
-import '../pages/css/Forums.css';
+import { useNavigate } from 'react-router-dom';
+import './css/TopicBlock.css';
 
 function TopicBlock({ title, content, link }) {
-    return (
-        <a href={link} className="clickable-box">
-            <div className="topic-block">
-                <h4 className="discussion-title">{title}</h4>
-                <p className="discussion-content">{content}</p>
-            </div>
-        </a>
-    );
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/forums/post/${encodeURIComponent(title)}`, {
+      state: { title, content }
+    });
+  };
+
+  return (
+    <div className="topic-block" onClick={handleClick}>
+      <h4 className="discussion-title">{title}</h4>
+      <p className="discussion-content">{content}</p>
+    </div>
+  );
 }
 
 export default TopicBlock;

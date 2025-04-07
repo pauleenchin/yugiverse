@@ -6,9 +6,7 @@ import './css/Forums.css';
 function Forums() {
     return (
         <>
-            <SectionTitle
-                title="Forums"
-            />
+            <SectionTitle title="Forums" />
             <div id="page">
                 <main id="content" className="columns">
                     <section id="forums" className="five">
@@ -16,22 +14,18 @@ function Forums() {
                             <DiscussionPost
                                 title="Is Branded Despia Still Meta in 2025?"
                                 content="With the latest banlist changes and new support cards coming out, do you think Branded Despia is still a top-tier deck?"
-                                link="#"
                             />
                             <DiscussionPost
                                 title="Can You Chain to Super Polymerization?"
                                 content="Hey everyone, I’ve been getting mixed answers about Super Polymerization and whether or not it can be negated or chained to."
-                                link="#"
                             />
                             <DiscussionPost
                                 title="Looking for Dark Magician 1st Edition (LOB), Offering Meta Staples"
                                 content="I’m looking to trade for a 1st Edition Legend of Blue-Eyes Dark Magician (LOB-005) in Near Mint condition."
-                                link="#"
                             />
                             <DiscussionPost
                                 title="What Was Your First Ever Yu-Gi-Oh! Deck?"
                                 content="What was the first-ever Yu-Gi-Oh! deck you played with? Structure Deck, custom build, or random packs?"
-                                link="#"
                             />
                         </section>
                     </section>

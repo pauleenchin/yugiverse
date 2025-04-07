@@ -6,6 +6,7 @@ function MonsterPage() {
   const monster = state?.monster;
   const imgBase = "https://yugiverse-server.onrender.com/";
   const imgSrc = imgBase + monster.image;
+  const cardImgBase = imgBase + "https://yugiverse-server.onrender.com/images";
 
   if (!monster) {
     return <p>Monster not found. Try going back to the Yugidex.</p>;
@@ -42,7 +43,7 @@ function MonsterPage() {
                 <h4>Card Art</h4>
                 <div className="columns">
                   {monster.cardart.length > 0 ? monster.cardart.map((img, i) => (
-                    <img key={i} src={imgBase + img} className="card-art-img one" alt={`Art ${i}`} />
+                    <img key={i} src={cardImgBase + img} className="card-art-img one" alt={`Art ${i}`} />
                   )) : <p>No card art available</p>}
                 </div>
               </div>
