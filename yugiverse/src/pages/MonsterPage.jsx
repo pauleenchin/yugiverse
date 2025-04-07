@@ -6,7 +6,7 @@ function MonsterPage() {
   const monster = state?.monster;
   const imgBase = "https://yugiverse-server.onrender.com/";
   const imgSrc = imgBase + monster.image;
-  const cardImgBase = imgBase + "https://yugiverse-server.onrender.com/images";
+  const cardImgBase = imgBase + "images/";
 
   if (!monster) {
     return <p>Monster not found. Try going back to the Yugidex.</p>;
