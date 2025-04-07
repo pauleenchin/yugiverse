@@ -25,7 +25,7 @@ function Yugidex() {
               key={monster.id}
               id={monster.id}
               name={monster.name}
-              image={`http://localhost:3001/${monster.image}`}
+              image={`https://yugiverse-server.onrender.com/${monster.image}`}
               monsterData={monster}
             />
           ))}

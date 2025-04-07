@@ -40,8 +40,7 @@ function Home() {
               <img src={`${process.env.PUBLIC_URL}/images/mystery-monster.jpg`} alt='Mystery Monster' />
             </div>
             <p>
-              Silhouette Rabbit is a Level 2 DARK Beast monster in Yu-Gi-Oh! with a shadowy,
-              mysterious design that makes it look like a swift and elusive creature...
+            Silhouette Rabbit is a Level 2 DARK Beast monster in Yu-Gi-Oh! with a shadowy, mysterious design that makes it look like a swift and elusive creature. Its effect focuses on dodging attacks or interactions, allowing it to vanish from the field temporarily. This card is often used in trick-based or control decks, where its ability to avoid danger can set up strategic plays.
             </p>
           </section>
         </div>

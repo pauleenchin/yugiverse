@@ -4,7 +4,7 @@ import './css/Yugidex.css';
 function MonsterPage() {
   const { state } = useLocation();
   const monster = state?.monster;
-  const imgBase = "http://localhost:3001/";
+  const imgBase = "https://yugiverse-server.onrender.com/";
   const imgSrc = imgBase + monster.image;
 
   if (!monster) {
