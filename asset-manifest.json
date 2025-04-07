@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/yugiverse/static/css/main.840504ee.css",
-    "main.js": "/yugiverse/static/js/main.b0a77169.js",
+    "main.css": "/yugiverse/static/css/main.22187f21.css",
+    "main.js": "/yugiverse/static/js/main.9953dac6.js",
     "index.html": "/yugiverse/index.html",
-    "main.840504ee.css.map": "/yugiverse/static/css/main.840504ee.css.map",
-    "main.b0a77169.js.map": "/yugiverse/static/js/main.b0a77169.js.map"
+    "main.22187f21.css.map": "/yugiverse/static/css/main.22187f21.css.map",
+    "main.9953dac6.js.map": "/yugiverse/static/js/main.9953dac6.js.map"
   },
   "entrypoints": [
-    "static/css/main.840504ee.css",
-    "static/js/main.b0a77169.js"
+    "static/css/main.22187f21.css",
+    "static/js/main.9953dac6.js"
   ]
 }
