@@ -21,14 +21,6 @@
     background-color: var(--secondary-color-sheer);
 }
 
-#forum-title, #about-us-header {
-    padding-left: 20px;
-    background-color: var(--secondary-color);
-    padding: 8px;
-    margin: 0;
-    color: var(--accent-color);
-}
-
 #back-header {
     padding-left: 20px;
     background-color: var(--secondary-color);
@@ -47,7 +39,7 @@
     color: var(--accent-color);
 }
 
-#contact-container, #trending-topics-section {
+#trending-topics-section {
     text-align: left;
     margin: 10px;
     background-color: var(--secondary-color-sheer);
@@ -55,45 +47,29 @@
     border-radius: 2px;
 }
 
-#contact-page {
-    padding-right: 50px;
-}
-
-#about-us-container p {
-    line-height: 1.8;
-    
-}
-
-/* Forums.css */
-
-/* Make the page take full height */
 html, body, #root {
     height: 100%;
     margin: 0;
     padding: 0;
   }
   
-  /* Ensure the layout fills the height */
   #page {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
   }
   
-  /* Expand content area to fill remaining space */
   main#content {
     flex: 1;
     display: flex;
   }
   
-  /* Stretch forum post section */
   #forums.five {
     flex: 5;
     display: flex;
     flex-direction: column;
   }
   
-  /* Stretch the post list */
   #forum-posts {
     flex: 1;
     display: flex;

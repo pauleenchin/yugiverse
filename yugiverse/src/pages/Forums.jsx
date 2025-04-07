@@ -21,14 +21,17 @@ function Forums() {
                             <DiscussionPost
                                 title="Can You Chain to Super Polymerization?"
                                 content="Hey everyone, I’ve been getting mixed answers about Super Polymerization and whether or not it can be negated or chained to."
+                                link="#"
                             />
                             <DiscussionPost
                                 title="Looking for Dark Magician 1st Edition (LOB), Offering Meta Staples"
                                 content="I’m looking to trade for a 1st Edition Legend of Blue-Eyes Dark Magician (LOB-005) in Near Mint condition."
+                                link="#"
                             />
                             <DiscussionPost
                                 title="What Was Your First Ever Yu-Gi-Oh! Deck?"
                                 content="What was the first-ever Yu-Gi-Oh! deck you played with? Structure Deck, custom build, or random packs?"
+                                link="#"
                             />
                         </section>
                     </section>

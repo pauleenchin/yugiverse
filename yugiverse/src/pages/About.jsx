@@ -1,5 +1,6 @@
 import './css/About.css'
 import SectionTitle from '../components/SectionTitle';
+import ContactForm from '../components/ContactForm';
 
 function About() {
     return (
@@ -24,9 +25,7 @@ function About() {
                     </div>
                 </section>
 
-                <section id="contact-container" className="one">
-                    <h2>Contact Us</h2>
-                </section>
+                <ContactForm />
             </div>
         </>
     );

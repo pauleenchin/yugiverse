@@ -17,17 +17,19 @@ function Home() {
                 image={`${process.env.PUBLIC_URL}/images/block-one.webp`}
                 title='New Banlist Announced'
                 alt='New Banlist'
-                link='/yugiverse/Forums'
+                link='/yugiverse/forums'
               />
               <HomeBlock
                 image={`${process.env.PUBLIC_URL}/images/block-two.png`}
                 title='Best Tech Cards'
                 alt='Best Tech Cards'
+                link='/yugiverse/forums'
               />
               <HomeBlock
                 image={`${process.env.PUBLIC_URL}/images/block-three.jpg`}
                 title='Most Expensive Cards of 2025'
                 alt='Expensive Cards 2025'
+                link='/yugiverse/forums'
               />
             </div>
           </section>

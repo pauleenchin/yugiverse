@@ -1,29 +1,29 @@
-// MonsterPage.jsx
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import './css/Yugidex.css';
 
 function MonsterPage() {
   const { state } = useLocation();
-  const navigate = useNavigate();
   const monster = state?.monster;
+  const imgBase = "http://localhost:3001/";
+  const imgSrc = imgBase + monster.image;
 
   if (!monster) {
-    return <p>Monster not found.</p>;
+    return <p>Monster not found. Try going back to the Yugidex.</p>;
   }
 
   return (
     <>
-      <div id="yugi-header">
-        <a href="#" id="yugi-nav-left" onClick={() => navigate(-1)}>&larr; Back</a>
+      <div id="yugi-header" className="header-centered">
+      <Link to="/yugidex" id="yugi-nav-left">&larr; Back</Link>
         <h2 id="yugi-number-name">
           {monster.name} {Array(monster.level).fill('★').join(' ')}
         </h2>
-        <a href="#" id="yugi-nav-right">Next &rarr;</a>
+        <span style={{ width: "60px" }}></span> { }
       </div>
       <div id="page">
         <div id="main-content" className="columns">
           <div className="one container">
-            <img src={monster.image} id="main-yugi-img" alt={monster.name} />
+            <img src={imgSrc} id="main-yugi-img" alt={monster.name} />
           </div>
           <div className="one container">
             <div className="container" id="bio-text">
@@ -42,7 +42,7 @@ function MonsterPage() {
                 <h4>Card Art</h4>
                 <div className="columns">
                   {monster.cardart.length > 0 ? monster.cardart.map((img, i) => (
-                    <img key={i} src={img} className="card-art-img one" alt={`Art ${i}`} />
+                    <img key={i} src={imgBase + img} className="card-art-img one" alt={`Art ${i}`} />
                   )) : <p>No card art available</p>}
                 </div>
               </div>

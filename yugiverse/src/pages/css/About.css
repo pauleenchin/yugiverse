@@ -1,0 +1,46 @@
+#page.columns {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  #about-us-container {
+    text-align: left;
+    margin: 10px;
+    
+  }
+
+  #contact-container {
+    padding: 8px 16px 8px 8px;
+    border-radius: 2px;
+    text-align: left;
+    margin: 10px;
+    background-color: var(--secondary-color-sheer);
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  textarea {
+    height: 250px;
+  }
+
+
+  @media screen and (min-width: 850px) {
+    #page.columns {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: stretch;
+      }
+      
+      #about-us-container {
+        flex: 2.5;
+      }
+      
+      #contact-container {
+        flex: 1;
+      }
+    
+}

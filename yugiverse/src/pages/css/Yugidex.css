@@ -15,6 +15,17 @@
     color: var(--accent-color);
 }
 
+.header-centered {
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .header-centered h2 {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+  }
+
 #monsters {
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +119,15 @@
 .card-art-img {
     width: 60px;
     height: auto;
+    margin: 5px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease;
 }
+
+.card-art-img:hover {
+    transform: scale(1.1);
+  }
 
 #main-yugi-img {
     align-items: center;
@@ -178,4 +197,28 @@
     #monsters {
         justify-content: space-between;
       }
+
+
+      #card-art .columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      
+      .card-art-img {
+        width: 100px;
+        height: auto;
+        flex-grow: 0;
+      }
+
+      .card-art .columns:only-child {
+        justify-content: center;
+        width: 100px;
+        height: auto;
+      }
+      
+
 }
