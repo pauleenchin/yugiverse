@@ -9,7 +9,7 @@ function Yugidex() {
 
   useEffect(() => {
     (async () => {
-      const response = await axios.get("http://localhost:3001/api/monsters");
+      const response = await axios.get("https://yugiverse-server.onrender.com/api/monsters");
 
       setMonsters(response.data);
     })();
