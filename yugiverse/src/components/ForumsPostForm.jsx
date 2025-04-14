@@ -38,6 +38,11 @@ function ForumsPostForm({ onPostAdded }) {
     } catch (err) {
       setSuccessMessage('');
       setErrorMessage(err.message);
+    } finally {
+      form.reset();
+      setTimeout(() => {
+        setSuccessMessage('');
+      }, 3000);
     }
   };
 
