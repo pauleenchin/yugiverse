@@ -35,14 +35,13 @@ function ForumsPostForm({ onPostAdded }) {
       setErrorMessage('');
       setTitle('');
       setContent('');
-    } catch (err) {
-      setSuccessMessage('');
-      setErrorMessage(err.message);
-    } finally {
-      form.reset();
+
       setTimeout(() => {
         setSuccessMessage('');
       }, 3000);
+    } catch (err) {
+      setSuccessMessage('');
+      setErrorMessage(err.message);
     }
   };
 
