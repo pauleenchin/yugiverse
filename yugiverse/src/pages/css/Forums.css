@@ -46,6 +46,7 @@ html, body, #root {
     flex-direction: column;
     gap: 15px;
     padding-right: 10px;
+    margin: 4px;
   }
   
   #trending-topics-section.one {
@@ -68,6 +69,10 @@ html, body, #root {
     gap: 12px;
   }
 
+  #post-title-input {
+    margin-bottom: 5px;
+  }
+
   
   @media screen and (min-width: 850px) {
 
@@ -87,6 +92,6 @@ html, body, #root {
     }
 
     #trending-topics-section.one {
-        flex: 1;
+        flex: 1.5;
     }
   }  
