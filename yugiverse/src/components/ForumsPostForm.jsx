@@ -18,7 +18,7 @@ function ForumsPostForm({ onPostAdded }) {
     }
 
     try {
-      const res = await fetch('http://localhost:3001/api/forum-posts', {
+      const res = await fetch('https://yugiverse-server.onrender.com/api/forum-posts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title, content }),
