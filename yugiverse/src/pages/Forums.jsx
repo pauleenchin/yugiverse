@@ -9,7 +9,7 @@ function Forums() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/forum-posts')
+    fetch('https://yugiverse-server.onrender.com/api/forum-posts')
       .then(res => res.json())
       .then(data => setPosts(data))
       .catch(err => console.error('Error loading posts:', err));
