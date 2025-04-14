@@ -31,7 +31,7 @@ function ForumsPostForm({ onPostAdded }) {
 
       const newPost = await res.json();
       onPostAdded(newPost);
-      setSuccessMessage('Post added successfully!');
+      setSuccessMessage('Posted successfully!');
       setErrorMessage('');
       setTitle('');
       setContent('');
