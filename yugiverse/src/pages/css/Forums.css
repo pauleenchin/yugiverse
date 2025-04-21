@@ -1,97 +1,122 @@
 html, body, #root {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #page.columns, main#content {
-    display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#page.columns,
+main#content {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+/* Back button section */
+#back-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: var(--shadow-preset);
+}
+
+/* Button styled to look like a link */
+#back-btn {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+#back-btn:hover {
+  color: white;
+}
+
+#forums.five {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+#forum-posts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-right: 10px;
+  margin: 4px;
+}
+
+#trending-topics-section.one {
+  padding: 8px 16px 8px 8px;
+  border-radius: 2px;
+  text-align: left;
+  margin: 10px;
+  background-color: var(--secondary-color-sheer);
+}
+
+#topic-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+#topic-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#post-title-input {
+  margin-bottom: 5px;
+}
+
+.success-msg {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.error-msg {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* Optional image style for detail view */
+.discussion-image {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Responsive layout */
+@media screen and (min-width: 850px) {
+  #page.columns,
+  main#content {
+    flex-direction: row;
     gap: 20px;
-    align-items: stretch;
-    flex-direction: column;
   }
 
-  #back-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 12px 20px;
-    font-weight: bold;
-    font-size: 18px;
-    box-shadow: var(--shadow-preset);
-  }
-
-  #back-btn {
-    color: var(--accent-color);
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 0.2s ease;
-  }
-  
-  #back-btn:hover {
-    color: white;
-  }
-  
-  #forums.five {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #forum-posts {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding-right: 10px;
-    margin: 4px;
-  }
-  
+  #forums.five,
   #trending-topics-section.one {
-    padding: 8px 16px 8px 8px;
-    border-radius: 2px;
-    text-align: left;
-    margin: 10px;
-    background-color: var(--secondary-color-sheer);
-  }
-  
-  #topic-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: var(--primary-color);
-  }
-  
-  #topic-section {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    width: 100%;
   }
 
-  #post-title-input {
-    margin-bottom: 5px;
+  .topic-block {
+    width: 100%;
   }
 
-  
-  @media screen and (min-width: 850px) {
-
-    #page.columns, main#content {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        align-items: stretch;
-      }
-  
-    #forums.five, #trending-topics-section.one {
-      width: 100%;
-    }
-  
-    .topic-block {
-      width: 100%;
-    }
-
-    #trending-topics-section.one {
-        flex: 1.5;
-    }
-  }  
+  #trending-topics-section.one {
+    flex: 1.5;
+  }
+}

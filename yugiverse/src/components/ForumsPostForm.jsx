@@ -4,6 +4,7 @@ import '../pages/css/Forums.css';
 function ForumsPostForm({ onPostAdded }) {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
+  const [image, setImage] = useState(null);
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -17,11 +18,17 @@ function ForumsPostForm({ onPostAdded }) {
       return setErrorMessage('Content must be at least 10 characters long.');
     }
 
+    const formData = new FormData();
+    formData.append('title', title);
+    formData.append('content', content);
+    if (image) {
+      formData.append('image', image);
+    }
+
     try {
       const res = await fetch('https://yugiverse-server.onrender.com/api/forum-posts', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ title, content }),
+        body: formData,
       });
 
       if (!res.ok) {
@@ -35,6 +42,7 @@ function ForumsPostForm({ onPostAdded }) {
       setErrorMessage('');
       setTitle('');
       setContent('');
+      setImage(null);
 
       setTimeout(() => {
         setSuccessMessage('');
@@ -61,9 +69,7 @@ function ForumsPostForm({ onPostAdded }) {
           required
         />
       </div>
-      
 
-      
       <textarea
         id="post-content"
         placeholder="Type here"
@@ -72,6 +78,17 @@ function ForumsPostForm({ onPostAdded }) {
         onChange={(e) => setContent(e.target.value)}
         required
       ></textarea>
+
+      <div className="form-group">
+        <label htmlFor="imageUpload">Upload Image:</label>
+        <input
+          id="imageUpload"
+          type="file"
+          accept="image/*"
+          name="image"
+          onChange={(e) => setImage(e.target.files[0])}
+        />
+      </div>
 
       <button type="submit">Post</button>
     </form>

@@ -29,9 +29,11 @@ function Forums() {
               {posts.map((post) => (
                 <DiscussionPost
                   key={post.id}
+                  id={post.id}
                   title={post.title}
                   content={post.content}
-                />
+                  image={post.image}
+              />
               ))}
             </section>
           </section>
@@ -39,24 +41,23 @@ function Forums() {
             <ForumsPostForm onPostAdded={handleNewPost} />
             <h3 id="topic-title">Trending Topics</h3>
             <div id="topic-section">
-                <TopicBlock
+              <TopicBlock
                 title="New Banlist Announced – What Got Hit the Hardest?"
                 content="The latest Yu-Gi-Oh! banlist just dropped. Did your deck survive, or do you need a full rebuild?"
                 link="#"
-                />
-                <TopicBlock
+              />
+              <TopicBlock
                 title="Best Tech Cards for the Current Meta"
                 content="Hand Traps, Board Breakers, Floodgates — which tech cards dominate right now?"
                 link="#"
-                />
-                <TopicBlock
+              />
+              <TopicBlock
                 title="Most Expensive Cards of 2025 – Are They Worth It?"
                 content="Some cards are skyrocketing in value. Are they worth the hype?"
                 link="#"
-                />
+              />
             </div>
-         
-        </aside>
+          </aside>
         </main>
       </div>
     </>

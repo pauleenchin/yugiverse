@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import './css/DiscussionPost.css';
 
-function DiscussionPost({ title, content }) {
+function DiscussionPost({ id, title, content, image }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate(`/forums/post/${encodeURIComponent(title)}`, {
-      state: { title, content }
+      state: { id, title, content, image }
     });
   };
 
