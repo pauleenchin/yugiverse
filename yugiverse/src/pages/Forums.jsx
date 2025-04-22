@@ -28,8 +28,8 @@ function Forums() {
             <section id="forum-posts">
               {posts.map((post) => (
                 <DiscussionPost
-                  key={post.id}
-                  id={post.id}
+                  key={post._id}
+                  id={post._id}
                   title={post.title}
                   content={post.content}
                   image={post.image}

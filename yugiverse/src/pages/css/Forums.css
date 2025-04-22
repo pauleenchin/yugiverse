@@ -12,7 +12,6 @@ main#content {
   flex-direction: column;
 }
 
-/* Back button section */
 #back-header {
   display: flex;
   justify-content: space-between;
@@ -25,7 +24,6 @@ main#content {
   box-shadow: var(--shadow-preset);
 }
 
-/* Button styled to look like a link */
 #back-btn {
   background: none;
   border: none;
@@ -92,14 +90,12 @@ main#content {
   margin-bottom: 6px;
 }
 
-/* Optional image style for detail view */
 .discussion-image {
   max-width: 100%;
   border-radius: 6px;
   margin-top: 10px;
 }
 
-/* Responsive layout */
 @media screen and (min-width: 850px) {
   #page.columns,
   main#content {
